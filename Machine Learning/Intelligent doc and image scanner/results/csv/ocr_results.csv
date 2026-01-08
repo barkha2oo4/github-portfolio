@@ -1,0 +1,26 @@
+filename,doc_type,category,path,extracted_text,organization,organization_conf,name,date,name_conf,date_conf,id_number,id_number_conf,export_timestamp
+handwritten_02.jpg,Document,handwritten_notes,data/input_images\handwritten_notes\handwritten_02.jpg,een t jist iis Tite : Sypk,,,,,,,,,2025-11-05 14:53:27
+handwritten_03.jpg,Document,handwritten_notes,data/input_images\handwritten_notes\handwritten_03.jpg,,,,,,,,,,2025-11-05 14:53:27
+handwritten_05.jpg,Document,handwritten_notes,data/input_images\handwritten_notes\handwritten_05.jpg,,,,,,,,,,2025-11-05 14:53:27
+College_I_card.jpg,Document,id_cards_documents,data/input_images\id_cards_documents\College_I_card.jpg,: 0W : 1 1 1 1 0 781 V 5 1 1 1 Spun s Ww CARD he oe BARKHA JHA oll Adin. Ho. t 9221cS508081 e Branch: B.Tech CSE-O4 . IO20 2022-2020 wet OuUS atel ather s Hane: PATH ALIT JHA Pye U MWA,BARKHA JHA,1.0,,,,,,,2025-11-05 14:53:27
+id_card_02.jpeg,ID Card,id_cards_documents,data/input_images\id_cards_documents\id_card_02.jpeg,N,,,,,,,,,2025-11-05 14:53:27
+id_card_03.jpeg,ID Card,id_cards_documents,data/input_images\id_cards_documents\id_card_03.jpeg,,,,,,,,,,2025-11-05 14:53:27
+id_card_05.jpeg,ID Card,id_cards_documents,data/input_images\id_cards_documents\id_card_05.jpeg,6,,,,,,,,,2025-11-05 14:53:27
+id_card_07.jpg,ID Card,id_cards_documents,data/input_images\id_cards_documents\id_card_07.jpg,2 2 3 6 2 2 8 I 8 W 8 1 1 2 oof of Age Card CITIZEN have y Angela ow Greene aan 09 Nov 2002 ay O 1 30 Apr 2028 - 1/7 5843 2166 1964 2184,,,Angela of Greene,09 Nov 2002,0.938,1.0,,,2025-11-05 14:53:27
+pan_card.jpg,Document,id_cards_documents,data/input_images\id_cards_documents\pan_card.jpg,jinjcubis _ 2 LL 7 J2 423 Dihi VHr LMYX JWeM 434129 H NHC YHZ j lt 3Ll6trd4o3 pJe JJqunH Juno V JuJCWl d fl I Q Qlet J0 LAOD INTINLHAJC IvI IA ENt Lcltby Xeb TKnSS Lc 2a oe aaa ainyeubls f ayQUpard 092 1 ae aaa as / feb Dp YH LNs awey SAdyned f tele Le VHF YH cue DLb6 rdddd J - pseg JOqUNA JuNOsoYy JUdUCLag os C ININDEVdIC XVI IN Isl aeote,I Q Let Of,0.667,Iii,,0.571,,soYy,1.0,2025-11-05 14:53:27
+printed_text_01.jpeg,Document,printed_text,data/input_images\printed_text\printed_text_01.jpeg,,,,,,,,,,2025-11-05 14:53:27
+printed_text_02.jpg,Document,printed_text,data/input_images\printed_text\printed_text_02.jpg,aT z,,,,,,,,,2025-11-05 14:53:27
+id_card_01.jpeg,ID Card,receipts_invoices,data/input_images\receipts_invoices\id_card_01.jpeg,6,,,,,,,,,2025-11-05 14:53:27
+id_card_02.jpeg,ID Card,receipts_invoices,data/input_images\receipts_invoices\id_card_02.jpeg,,,,,,,,,,2025-11-05 14:53:27
+id_card_03.jpeg,ID Card,receipts_invoices,data/input_images\receipts_invoices\id_card_03.jpeg,1 3 ee BITIZENC,,,,,,,,,2025-11-05 14:53:27
+receipts_011.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipts_011.png,,,,,,,,,,2025-11-05 14:53:27
+receipts_03.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipts_03.png,iHi K I4fr il ll yl ys Vs: real 4 pili Hla fil,iii K,0.8,,,,,,,2025-11-05 14:53:27
+receipts_05.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipts_05.png,WN6,,,,,,,,,2025-11-05 14:53:27
+receipts_07.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipts_07.png,,,,,,,,,,2025-11-05 14:53:27
+receipts_09.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipts_09.png,,,,,,,,,,2025-11-05 14:53:27
+receipt_01.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipt_01.png,Ih H be ih jit ae Mi 2 all,Oh H,0.75,,,,,,,2025-11-05 14:53:27
+receipt_02.png,Receipt,receipts_invoices,data/input_images\receipts_invoices\receipt_02.png,,,,,,,,,,2025-11-05 14:53:27
+sc_01.jpeg,Document,screenshots,data/input_images\screenshots\sc_01.jpeg,,,,,,,,,,2025-11-05 14:53:27
+sc_02.jpeg,Document,screenshots,data/input_images\screenshots\sc_02.jpeg,,,,,,,,,,2025-11-05 14:53:27
+sc_03.jpeg,Document,screenshots,data/input_images\screenshots\sc_03.jpeg,,,,,,,,,,2025-11-05 14:53:27
+sc_05.jpeg,Document,screenshots,data/input_images\screenshots\sc_05.jpeg,2,,,,,,,,,2025-11-05 14:53:27

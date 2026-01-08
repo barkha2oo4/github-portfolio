@@ -1,0 +1,239 @@
+import streamlit as st
+import easyocr
+import cv2
+import numpy as np
+import pandas as pd
+import os
+import shutil
+from PIL import Image, ImageDraw, ImageFont
+from modules.text_cleaning import clean_text, extract_fields
+from modules.nlp_postprocess import validate_fields
+from modules.image_preprocess import preprocess_image
+
+# Configure Tesseract path (optional - keep if installed)
+pytesseract_path = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+os.environ["PATH"] += os.pathsep + os.path.dirname(pytesseract_path)
+
+# Check Tesseract availability
+has_tesseract = False
+try:
+    import pytesseract
+    if os.path.isfile(pytesseract_path):
+        pytesseract.pytesseract.tesseract_cmd = pytesseract_path
+        version = pytesseract.get_tesseract_version()
+        has_tesseract = True
+    else:
+        # Not critical; continue with EasyOCR-only
+        has_tesseract = False
+except Exception:
+    has_tesseract = False
+
+# Try to import AI OCR (TrOCR) availability flag
+try:
+    from modules.ai_ocr import is_handwritten, trocr_handwriting_ocr
+    AI_OCR_AVAILABLE = True
+except Exception:
+    AI_OCR_AVAILABLE = False
+
+# Streamlit config
+st.set_page_config(page_title="IDIS - Intelligent Document & Image Scanner", layout="wide")
+
+st.markdown("# 🧠 Intelligent Document & Image Scanner")
+st.markdown("A professional OCR front-end with engine selection, preprocessing controls and interactive review.")
+
+def _resize_for_display(pil_img: Image.Image, max_width: int = 900) -> Image.Image:
+    w, h = pil_img.size
+    if w <= max_width:
+        return pil_img
+    ratio = max_width / float(w)
+    # Pillow resampling: some versions expose Image.LANCZOS, newer use Image.Resampling
+    # Prefer the Resampling enum on newer Pillow, fall back to module attributes
+    resampling = getattr(Image, 'Resampling', None)
+    if resampling is not None:
+        resample = getattr(resampling, 'LANCZOS', getattr(resampling, 'BICUBIC'))
+    else:
+        resample = getattr(Image, 'LANCZOS', getattr(Image, 'BICUBIC', 3))
+    return pil_img.resize((max_width, int(h * ratio)), resample)
+
+
+@st.cache_resource
+def get_easyocr_reader(lang_list=("en",)):
+    return easyocr.Reader(list(lang_list), gpu=False)
+
+
+def draw_boxes(pil_img: Image.Image, ocr_results):
+    """Draw bounding boxes and labels on a PIL image using EasyOCR result format."""
+    draw = ImageDraw.Draw(pil_img)
+    try:
+        for res in ocr_results:
+            # res = [bbox, text, confidence]
+            if isinstance(res, (list, tuple)) and len(res) >= 2:
+                bbox = res[0]
+                text = str(res[1])
+                # draw polygon
+                draw.polygon([tuple(p) for p in bbox], outline=(255, 0, 0))
+                # draw label background
+                draw.rectangle([bbox[0][0], bbox[0][1]-18, bbox[0][0]+len(text)*6, bbox[0][1]], fill=(255,0,0))
+                draw.text((bbox[0][0]+2, bbox[0][1]-18), text, fill=(255,255,255))
+    except Exception:
+        pass
+    return pil_img
+
+
+# Sidebar - enterprise controls
+with st.sidebar.expander("Engine & Processing Settings", expanded=True):
+    ocr_mode = st.selectbox("OCR Mode", options=["Auto", "EasyOCR+Tesseract", "TrOCR (handwriting)"])
+    show_boxes = st.checkbox("Show OCR bounding boxes", value=True)
+    max_display_width = st.slider("Max display width (px)", min_value=400, max_value=1200, value=900)
+    max_processing_dim = st.slider("Max processing dimension (px)", min_value=800, max_value=3000, value=1600)
+    enable_inverted_recheck = st.checkbox("Enable inverted-contrast recheck", value=True)
+    st.markdown("---")
+    st.markdown("Preprocessing tweaks")
+    clahe_clip = st.slider("CLAHE clip limit", min_value=1.0, max_value=6.0, value=3.0)
+    upsample_min = st.slider("Upscale min dimension (px)", min_value=400, max_value=1600, value=800)
+
+# Input area
+col1, col2 = st.columns([1, 1])
+with col1:
+    st.subheader("Input")
+    input_mode = st.radio("Choose input mode:", ("Upload Image", "Webcam Capture"))
+    uploaded_file = None
+    if input_mode == "Upload Image":
+        uploaded_file = st.file_uploader("Upload an image (jpg, jpeg, png):", type=["jpg", "jpeg", "png", "tif", "tiff"])
+    else:
+        uploaded_camera = st.camera_input("Capture image from webcam:")
+        uploaded_file = uploaded_camera
+
+with col2:
+    st.subheader("Preview & Actions")
+    run_button = st.button("🔍 Run OCR & Analyze")
+    st.write("\n")
+    download_name = st.text_input("Download filename", value="ocr_results.csv")
+
+# Processing and result area
+if run_button:
+    if uploaded_file is None:
+        st.warning("Please upload or capture an image first!")
+    else:
+        # Read uploaded file into PIL and numpy BGR
+        image = Image.open(uploaded_file).convert("RGB")
+        display_image = _resize_for_display(image, max_width=max_display_width)
+        st.image(display_image, caption="Original Image", use_container_width=False)
+
+        img_array = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+
+        # Preprocess with user-controlled params
+        with st.spinner("Preprocessing image..."):
+            # Temporarily adjust preprocess settings via environment or pass params if implemented
+            # Downscale very large images to keep processing memory/time reasonable
+            h0, w0 = img_array.shape[:2]
+            if max(h0, w0) > int(max_processing_dim):
+                scale_down = int(max_processing_dim) / float(max(h0, w0))
+                img_array = cv2.resize(img_array, (int(w0 * scale_down), int(h0 * scale_down)), interpolation=cv2.INTER_AREA)
+
+            preprocessed = preprocess_image(img_array, clahe_clip=clahe_clip, target_min_dim=upsample_min)
+            preprocessed_pil = Image.fromarray(cv2.cvtColor(preprocessed, cv2.COLOR_BGR2RGB)) if preprocessed.ndim == 3 else Image.fromarray(preprocessed)
+            preprocessed_display = _resize_for_display(preprocessed_pil, max_width=max_display_width)
+            st.image(preprocessed_display, caption="Preprocessed Image", use_container_width=False)
+
+        reader = get_easyocr_reader()
+
+        # Decide engine
+        use_trocr = False
+        if ocr_mode == "TrOCR (handwriting)" and AI_OCR_AVAILABLE:
+            use_trocr = True
+        elif ocr_mode == "Auto" and AI_OCR_AVAILABLE:
+            try:
+                if is_handwritten(img_array):
+                    use_trocr = True
+            except Exception:
+                use_trocr = False
+
+        final_text = ""
+        ocr_results = []
+        if use_trocr and AI_OCR_AVAILABLE:
+            st.info("✍️ Detected/forced handwritten mode — running TrOCR (may take a while on first run)")
+            with st.spinner("Running TrOCR (handwriting model)..."):
+                try:
+                    final_text = trocr_handwriting_ocr(img_array)
+                except Exception as e:
+                    st.error(f"TrOCR failed: {e}")
+
+        # Fallback / printed text path
+        if not final_text:
+            with st.spinner("Running EasyOCR..."):
+                try:
+                    ocr_results = reader.readtext(preprocessed)
+                    # concatenate texts
+                    texts = []
+                    for res in ocr_results:
+                        if isinstance(res, (list, tuple)) and len(res) > 1:
+                            texts.append(res[1])
+                        elif isinstance(res, dict):
+                            texts.append(res.get("text", ""))
+                        else:
+                            texts.append(str(res))
+                    final_text = " ".join(filter(None, texts))
+                except Exception as e:
+                    st.error(f"EasyOCR failed: {e}")
+
+            # Tesseract complement
+            if has_tesseract:
+                with st.spinner("Running Tesseract (optional)..."):
+                    try:
+                        tess_text = pytesseract.image_to_string(preprocessed)
+                        if tess_text and tess_text.strip():
+                            final_text = f"{final_text} {tess_text}" if final_text else tess_text
+                    except Exception:
+                        pass
+
+        # Inverted recheck if enabled and low confidence
+        if enable_inverted_recheck and not final_text:
+            with st.spinner("Trying inverted-contrast recheck..."):
+                try:
+                    gray = cv2.cvtColor(preprocessed, cv2.COLOR_BGR2GRAY) if preprocessed.ndim == 3 else preprocessed
+                    inv = cv2.bitwise_not(gray)
+                    inv_res = reader.readtext(inv)
+                    inv_texts = [r[1] for r in inv_res if isinstance(r, (list, tuple)) and len(r) > 1]
+                    if inv_texts:
+                        final_text = " ".join(inv_texts)
+                        ocr_results = inv_res
+                except Exception:
+                    pass
+
+        # Clean, extract and validate
+        cleaned = clean_text(final_text)
+        fields = extract_fields(cleaned)
+        validated_fields, confidence_scores = validate_fields(fields)
+
+        # Results layout
+        st.subheader("🧾 OCR Output")
+        st.text_area("Extracted Text", value=final_text, height=200)
+
+        st.subheader("📋 Extracted Fields (editable)")
+        edited = st.text_area("Edit fields as JSON-like key:value lines", value="\n".join([f"{k}: {v}" for k, v in validated_fields.items()]) if validated_fields else "")
+
+        st.subheader("📊 Confidence Scores")
+        st.json(confidence_scores)
+
+        # Show bounding boxes overlay if requested
+        if show_boxes and ocr_results:
+            pil_box = image.copy()
+            pil_box = draw_boxes(pil_box, ocr_results)
+            st.image(_resize_for_display(pil_box, max_width=max_display_width), caption="Detected text boxes", use_container_width=False)
+
+        # Prepare dataframe and download
+        df = pd.DataFrame([{
+            "filename": getattr(uploaded_file, 'name', 'uploaded_image'),
+            "extracted_text": cleaned,
+            **{k: v for k, v in validated_fields.items()},
+            **{f"{k}_conf": v for k, v in confidence_scores.items()}
+        }])
+
+        csv_bytes = df.to_csv(index=False).encode('utf-8')
+        st.download_button("⬇️ Download results (CSV)", data=csv_bytes, file_name=download_name, mime='text/csv')
+
+        # Save to project results
+        os.makedirs("results", exist_ok=True)
+        df.to_csv(os.path.join("results", download_name), index=False)
+        st.success("✅ Results saved and downloadable")

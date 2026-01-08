@@ -1,0 +1,7 @@
+2025-11-05 15:05:43,318 |     INFO | logger_config.py:40 | ✅ Logging system initialized.
+2025-11-05 15:05:43,370 |     INFO | main.py:40 | Found tesseract executable at: C:\Program Files\Tesseract-OCR\tesseract.EXE
+2025-11-05 15:05:43,370 |     INFO | main.py:141 | IDIS OCR System Starting...
+2025-11-05 15:05:43,371 |     INFO | main.py:142 | Choose Mode:
+2025-11-05 15:05:43,371 |     INFO | main.py:143 | 1️⃣ - Batch Image OCR (from data/input_images)
+2025-11-05 15:05:43,372 |     INFO | main.py:144 | 2️⃣ - Real-Time OCR via Webcam
+2025-11-05 15:05:45,516 |     INFO | main.py:158 | Starting real-time OCR via webcam...

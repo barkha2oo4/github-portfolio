@@ -1,0 +1,32 @@
+2025-11-04 22:20:19,649 |     INFO | logger_config.py:40 | ✅ Logging system initialized.
+2025-11-04 22:20:19,650 |     INFO | main.py:86 | IDIS OCR System Starting...
+2025-11-04 22:20:19,650 |     INFO | main.py:87 | Choose Mode:
+2025-11-04 22:20:19,651 |     INFO | main.py:88 | 1️⃣ - Batch Image OCR (from data/input_images)
+2025-11-04 22:20:19,651 |     INFO | main.py:89 | 2️⃣ - Real-Time OCR via Webcam
+2025-11-04 22:20:25,958 |     INFO | main.py:100 | Starting batch OCR processing...
+2025-11-04 22:20:29,596 |     INFO | main.py:31 | Initialized EasyOCR reader
+2025-11-04 22:20:29,597 |     INFO | main.py:45 | 🔍 Processing: handwritten_02.jpg (category: handwritten_notes)
+2025-11-04 22:20:30,727 |    ERROR | main.py:59 | ❌ Error processing handwritten_02.jpg (category: handwritten_notes): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:30,729 |     INFO | main.py:45 | 🔍 Processing: handwritten_03.jpg (category: handwritten_notes)
+2025-11-04 22:20:31,163 |    ERROR | main.py:59 | ❌ Error processing handwritten_03.jpg (category: handwritten_notes): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:31,164 |     INFO | main.py:45 | 🔍 Processing: handwritten_05.jpg (category: handwritten_notes)
+2025-11-04 22:20:31,501 |    ERROR | main.py:59 | ❌ Error processing handwritten_05.jpg (category: handwritten_notes): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:31,502 |     INFO | main.py:45 | 🔍 Processing: printed_text_01.jpeg (category: printed_text)
+2025-11-04 22:20:31,881 |    ERROR | main.py:59 | ❌ Error processing printed_text_01.jpeg (category: printed_text): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:31,882 |     INFO | main.py:45 | 🔍 Processing: printed_text_02.jpg (category: printed_text)
+2025-11-04 22:20:32,772 |    ERROR | main.py:59 | ❌ Error processing printed_text_02.jpg (category: printed_text): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:32,775 |     INFO | main.py:45 | 🔍 Processing: id_card_01.jpeg (category: receipts_invoices)
+2025-11-04 22:20:33,243 |    ERROR | main.py:59 | ❌ Error processing id_card_01.jpeg (category: receipts_invoices): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:33,244 |     INFO | main.py:45 | 🔍 Processing: id_card_02.jpeg (category: receipts_invoices)
+2025-11-04 22:20:33,435 |    ERROR | main.py:59 | ❌ Error processing id_card_02.jpeg (category: receipts_invoices): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:33,437 |     INFO | main.py:45 | 🔍 Processing: id_card_03.jpeg (category: receipts_invoices)
+2025-11-04 22:20:33,930 |    ERROR | main.py:59 | ❌ Error processing id_card_03.jpeg (category: receipts_invoices): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:33,931 |     INFO | main.py:45 | 🔍 Processing: receipt_01.png (category: receipts_invoices)
+2025-11-04 22:20:34,295 |    ERROR | main.py:59 | ❌ Error processing receipt_01.png (category: receipts_invoices): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:34,296 |     INFO | main.py:45 | 🔍 Processing: receipt_02.png (category: receipts_invoices)
+2025-11-04 22:20:34,690 |    ERROR | main.py:59 | ❌ Error processing receipt_02.png (category: receipts_invoices): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:34,691 |     INFO | main.py:45 | 🔍 Processing: sc_01.jpeg (category: screenshots)
+2025-11-04 22:20:35,047 |    ERROR | main.py:59 | ❌ Error processing sc_01.jpeg (category: screenshots): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:35,048 |     INFO | main.py:45 | 🔍 Processing: sc_02.jpeg (category: screenshots)
+2025-11-04 22:20:35,405 |    ERROR | main.py:59 | ❌ Error processing sc_02.jpeg (category: screenshots): tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-11-04 22:20:35,406 |  WARNING | main.py:78 | No data was processed successfully.

@@ -1,0 +1,58 @@
+2025-11-04 22:57:07,987 |     INFO | logger_config.py:40 | ✅ Logging system initialized.
+2025-11-04 22:57:07,993 |  WARNING | main.py:43 | Tesseract not found on PATH; pytesseract will be unavailable. Falling back to EasyOCR-only where needed.
+2025-11-04 22:57:07,993 |     INFO | main.py:121 | IDIS OCR System Starting...
+2025-11-04 22:57:07,993 |     INFO | main.py:122 | Choose Mode:
+2025-11-04 22:57:07,994 |     INFO | main.py:123 | 1️⃣ - Batch Image OCR (from data/input_images)
+2025-11-04 22:57:07,994 |     INFO | main.py:124 | 2️⃣ - Real-Time OCR via Webcam
+2025-11-04 22:57:11,646 |     INFO | main.py:135 | Starting batch OCR processing...
+2025-11-04 22:57:13,463 |     INFO | main.py:60 | Initialized EasyOCR reader
+2025-11-04 22:57:13,464 |     INFO | main.py:74 | 🔍 Processing: handwritten_02.jpg (category: handwritten_notes)
+2025-11-04 22:57:13,814 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:13,816 |     INFO | main.py:82 | 📄 Extracted Fields for handwritten_02.jpg: {}
+2025-11-04 22:57:13,816 |     INFO | main.py:91 | ✅ Extraction successful for handwritten_02.jpg (category: handwritten_notes)
+2025-11-04 22:57:13,816 |     INFO | main.py:74 | 🔍 Processing: handwritten_03.jpg (category: handwritten_notes)
+2025-11-04 22:57:14,108 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:14,109 |     INFO | main.py:82 | 📄 Extracted Fields for handwritten_03.jpg: {}
+2025-11-04 22:57:14,109 |     INFO | main.py:91 | ✅ Extraction successful for handwritten_03.jpg (category: handwritten_notes)
+2025-11-04 22:57:14,109 |     INFO | main.py:74 | 🔍 Processing: handwritten_05.jpg (category: handwritten_notes)
+2025-11-04 22:57:14,417 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:14,418 |     INFO | main.py:82 | 📄 Extracted Fields for handwritten_05.jpg: {}
+2025-11-04 22:57:14,418 |     INFO | main.py:91 | ✅ Extraction successful for handwritten_05.jpg (category: handwritten_notes)
+2025-11-04 22:57:14,419 |     INFO | main.py:74 | 🔍 Processing: printed_text_01.jpeg (category: printed_text)
+2025-11-04 22:57:14,722 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:14,722 |     INFO | main.py:82 | 📄 Extracted Fields for printed_text_01.jpeg: {}
+2025-11-04 22:57:14,722 |     INFO | main.py:91 | ✅ Extraction successful for printed_text_01.jpeg (category: printed_text)
+2025-11-04 22:57:14,723 |     INFO | main.py:74 | 🔍 Processing: printed_text_02.jpg (category: printed_text)
+2025-11-04 22:57:15,386 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:15,387 |     INFO | main.py:82 | 📄 Extracted Fields for printed_text_02.jpg: {}
+2025-11-04 22:57:15,387 |     INFO | main.py:91 | ✅ Extraction successful for printed_text_02.jpg (category: printed_text)
+2025-11-04 22:57:15,387 |     INFO | main.py:74 | 🔍 Processing: id_card_01.jpeg (category: receipts_invoices)
+2025-11-04 22:57:15,732 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:15,739 |     INFO | main.py:82 | 📄 Extracted Fields for id_card_01.jpeg: {}
+2025-11-04 22:57:15,740 |     INFO | main.py:91 | ✅ Extraction successful for id_card_01.jpeg (category: receipts_invoices)
+2025-11-04 22:57:15,742 |     INFO | main.py:74 | 🔍 Processing: id_card_02.jpeg (category: receipts_invoices)
+2025-11-04 22:57:15,887 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:15,888 |     INFO | main.py:82 | 📄 Extracted Fields for id_card_02.jpeg: {}
+2025-11-04 22:57:15,888 |     INFO | main.py:91 | ✅ Extraction successful for id_card_02.jpeg (category: receipts_invoices)
+2025-11-04 22:57:15,888 |     INFO | main.py:74 | 🔍 Processing: id_card_03.jpeg (category: receipts_invoices)
+2025-11-04 22:57:16,240 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:16,249 |     INFO | main.py:82 | 📄 Extracted Fields for id_card_03.jpeg: {}
+2025-11-04 22:57:16,249 |     INFO | main.py:91 | ✅ Extraction successful for id_card_03.jpeg (category: receipts_invoices)
+2025-11-04 22:57:16,250 |     INFO | main.py:74 | 🔍 Processing: receipt_01.png (category: receipts_invoices)
+2025-11-04 22:57:16,526 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:16,527 |     INFO | main.py:82 | 📄 Extracted Fields for receipt_01.png: {}
+2025-11-04 22:57:16,527 |     INFO | main.py:91 | ✅ Extraction successful for receipt_01.png (category: receipts_invoices)
+2025-11-04 22:57:16,527 |     INFO | main.py:74 | 🔍 Processing: receipt_02.png (category: receipts_invoices)
+2025-11-04 22:57:16,800 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:16,800 |     INFO | main.py:82 | 📄 Extracted Fields for receipt_02.png: {}
+2025-11-04 22:57:16,801 |     INFO | main.py:91 | ✅ Extraction successful for receipt_02.png (category: receipts_invoices)
+2025-11-04 22:57:16,801 |     INFO | main.py:74 | 🔍 Processing: sc_01.jpeg (category: screenshots)
+2025-11-04 22:57:17,062 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:17,063 |     INFO | main.py:82 | 📄 Extracted Fields for sc_01.jpeg: {}
+2025-11-04 22:57:17,063 |     INFO | main.py:91 | ✅ Extraction successful for sc_01.jpeg (category: screenshots)
+2025-11-04 22:57:17,063 |     INFO | main.py:74 | 🔍 Processing: sc_02.jpeg (category: screenshots)
+2025-11-04 22:57:17,320 |  WARNING | text_extraction.py:33 | pytesseract unavailable or failed: tesseract is not installed or it's not in your PATH. See README file for more information.. Using EasyOCR result only.
+2025-11-04 22:57:17,320 |     INFO | main.py:82 | 📄 Extracted Fields for sc_02.jpeg: {}
+2025-11-04 22:57:17,321 |     INFO | main.py:91 | ✅ Extraction successful for sc_02.jpeg (category: screenshots)
+2025-11-04 22:57:17,338 |     INFO | main.py:104 | ✅ Extraction completed! Results saved to results/csv\ocr_results.csv
+2025-11-04 22:57:17,346 |     INFO | main.py:108 | ✅ Data successfully exported to SQLite DB

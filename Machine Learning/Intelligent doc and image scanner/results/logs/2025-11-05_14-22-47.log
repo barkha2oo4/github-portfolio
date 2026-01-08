@@ -1,0 +1,260 @@
+2025-11-05 14:22:47,169 |     INFO | logger_config.py:40 | ✅ Logging system initialized.
+2025-11-05 14:22:47,227 |     INFO | main.py:40 | Found tesseract executable at: C:\Program Files\Tesseract-OCR\tesseract.EXE
+2025-11-05 14:22:47,227 |     INFO | main.py:141 | IDIS OCR System Starting...
+2025-11-05 14:22:47,227 |     INFO | main.py:142 | Choose Mode:
+2025-11-05 14:22:47,228 |     INFO | main.py:143 | 1️⃣ - Batch Image OCR (from data/input_images)
+2025-11-05 14:22:47,228 |     INFO | main.py:144 | 2️⃣ - Real-Time OCR via Webcam
+2025-11-05 14:22:50,931 |     INFO | main.py:155 | Starting batch OCR processing...
+2025-11-05 14:22:54,772 |     INFO | main.py:61 | Initialized EasyOCR reader
+2025-11-05 14:22:54,774 |     INFO | main.py:75 | 🔍 Processing: handwritten_02.jpg (category: handwritten_notes)
+2025-11-05 14:22:55,162 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:22:55,551 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:22:55,599 |     INFO | main.py:83 | 📄 Extracted Fields for handwritten_02.jpg: {}
+2025-11-05 14:22:55,600 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:22:55,600 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:22:55,600 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:22:55,601 |     INFO | main.py:111 | ✅ Extraction successful for handwritten_02.jpg (category: handwritten_notes)
+2025-11-05 14:22:55,601 |     INFO | main.py:75 | 🔍 Processing: handwritten_03.jpg (category: handwritten_notes)
+2025-11-05 14:22:55,960 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:22:56,270 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:22:56,271 |     INFO | main.py:83 | 📄 Extracted Fields for handwritten_03.jpg: {}
+2025-11-05 14:22:56,271 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:22:56,272 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:22:56,272 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:22:56,273 |     INFO | main.py:111 | ✅ Extraction successful for handwritten_03.jpg (category: handwritten_notes)
+2025-11-05 14:22:56,273 |     INFO | main.py:75 | 🔍 Processing: handwritten_05.jpg (category: handwritten_notes)
+2025-11-05 14:22:56,588 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:22:56,893 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:22:56,893 |     INFO | main.py:83 | 📄 Extracted Fields for handwritten_05.jpg: {}
+2025-11-05 14:22:56,894 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:22:56,894 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:22:56,895 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:22:56,895 |     INFO | main.py:111 | ✅ Extraction successful for handwritten_05.jpg (category: handwritten_notes)
+2025-11-05 14:22:56,896 |     INFO | main.py:75 | 🔍 Processing: College_I_card.jpg (category: id_cards_documents)
+2025-11-05 14:23:03,512 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:04,114 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:04,158 |     INFO | main.py:83 | 📄 Extracted Fields for College_I_card.jpg: {'Name': 'ho'}
+2025-11-05 14:23:04,256 |     INFO | main.py:87 | ✅ Validated Fields: {'Name': 'ho'}
+2025-11-05 14:23:04,256 |     INFO | main.py:88 | 📊 Confidence Scores: {'Name': 1.0}
+2025-11-05 14:23:04,257 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:04,257 |     INFO | main.py:111 | ✅ Extraction successful for College_I_card.jpg (category: id_cards_documents)
+2025-11-05 14:23:04,258 |     INFO | main.py:75 | 🔍 Processing: id_card_02.jpeg (category: id_cards_documents)
+2025-11-05 14:23:04,790 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:05,083 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:05,093 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_02.jpeg: {}
+2025-11-05 14:23:05,094 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:05,094 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:05,095 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:05,095 |     INFO | main.py:111 | ✅ Extraction successful for id_card_02.jpeg (category: id_cards_documents)
+2025-11-05 14:23:05,096 |     INFO | main.py:75 | 🔍 Processing: id_card_03.jpeg (category: id_cards_documents)
+2025-11-05 14:23:05,449 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:05,760 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:05,761 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_03.jpeg: {}
+2025-11-05 14:23:05,762 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:05,762 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:05,763 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:05,763 |     INFO | main.py:111 | ✅ Extraction successful for id_card_03.jpeg (category: id_cards_documents)
+2025-11-05 14:23:05,764 |     INFO | main.py:75 | 🔍 Processing: id_card_05.jpeg (category: id_cards_documents)
+2025-11-05 14:23:06,201 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:06,490 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:06,501 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_05.jpeg: {}
+2025-11-05 14:23:06,501 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:06,502 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:06,502 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:06,503 |     INFO | main.py:111 | ✅ Extraction successful for id_card_05.jpeg (category: id_cards_documents)
+2025-11-05 14:23:06,503 |     INFO | main.py:75 | 🔍 Processing: id_card_07.jpg (category: id_cards_documents)
+2025-11-05 14:23:11,088 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:11,583 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:11,614 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_07.jpg: {}
+2025-11-05 14:23:11,615 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:11,615 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:11,616 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:11,616 |     INFO | main.py:111 | ✅ Extraction successful for id_card_07.jpg (category: id_cards_documents)
+2025-11-05 14:23:11,616 |     INFO | main.py:75 | 🔍 Processing: pan_card.jpg (category: id_cards_documents)
+2025-11-05 14:23:20,959 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:21,603 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:21,651 |     INFO | main.py:83 | 📄 Extracted Fields for pan_card.jpg: {'Name': 'xeb tknss'}
+2025-11-05 14:23:21,821 |     INFO | main.py:87 | ✅ Validated Fields: {'Name': 'web tends'}
+2025-11-05 14:23:21,821 |     INFO | main.py:88 | 📊 Confidence Scores: {'Name': 0.667}
+2025-11-05 14:23:21,821 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:21,822 |     INFO | main.py:111 | ✅ Extraction successful for pan_card.jpg (category: id_cards_documents)
+2025-11-05 14:23:21,822 |     INFO | main.py:75 | 🔍 Processing: placeholder_1.jpg (category: id_cards_documents)
+2025-11-05 14:23:24,174 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:24,481 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:24,482 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_1.jpg: {}
+2025-11-05 14:23:24,482 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:24,483 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:24,483 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:24,484 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_1.jpg (category: id_cards_documents)
+2025-11-05 14:23:24,484 |     INFO | main.py:75 | 🔍 Processing: placeholder_2.jpg (category: id_cards_documents)
+2025-11-05 14:23:26,790 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:27,118 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:27,119 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_2.jpg: {}
+2025-11-05 14:23:27,120 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:27,120 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:27,121 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:27,121 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_2.jpg (category: id_cards_documents)
+2025-11-05 14:23:27,122 |     INFO | main.py:75 | 🔍 Processing: placeholder_3.jpg (category: printed_text)
+2025-11-05 14:23:29,451 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:29,753 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:29,753 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_3.jpg: {}
+2025-11-05 14:23:29,754 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:29,754 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:29,755 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:29,756 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_3.jpg (category: printed_text)
+2025-11-05 14:23:29,756 |     INFO | main.py:75 | 🔍 Processing: printed_text_01.jpeg (category: printed_text)
+2025-11-05 14:23:30,135 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:30,450 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:30,451 |     INFO | main.py:83 | 📄 Extracted Fields for printed_text_01.jpeg: {}
+2025-11-05 14:23:30,452 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:30,452 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:30,452 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:30,453 |     INFO | main.py:111 | ✅ Extraction successful for printed_text_01.jpeg (category: printed_text)
+2025-11-05 14:23:30,453 |     INFO | main.py:75 | 🔍 Processing: printed_text_02.jpg (category: printed_text)
+2025-11-05 14:23:31,417 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:31,747 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:31,758 |     INFO | main.py:83 | 📄 Extracted Fields for printed_text_02.jpg: {}
+2025-11-05 14:23:31,758 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:31,758 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:31,759 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:31,759 |     INFO | main.py:111 | ✅ Extraction successful for printed_text_02.jpg (category: printed_text)
+2025-11-05 14:23:31,760 |     INFO | main.py:75 | 🔍 Processing: id_card_01.jpeg (category: receipts_invoices)
+2025-11-05 14:23:32,178 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:32,453 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:32,463 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_01.jpeg: {}
+2025-11-05 14:23:32,464 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:32,464 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:32,465 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:32,465 |     INFO | main.py:111 | ✅ Extraction successful for id_card_01.jpeg (category: receipts_invoices)
+2025-11-05 14:23:32,465 |     INFO | main.py:75 | 🔍 Processing: id_card_02.jpeg (category: receipts_invoices)
+2025-11-05 14:23:32,623 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:32,877 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:32,878 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_02.jpeg: {}
+2025-11-05 14:23:32,879 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:32,879 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:32,880 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:32,880 |     INFO | main.py:111 | ✅ Extraction successful for id_card_02.jpeg (category: receipts_invoices)
+2025-11-05 14:23:32,881 |     INFO | main.py:75 | 🔍 Processing: id_card_03.jpeg (category: receipts_invoices)
+2025-11-05 14:23:33,360 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:33,664 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:33,675 |     INFO | main.py:83 | 📄 Extracted Fields for id_card_03.jpeg: {}
+2025-11-05 14:23:33,676 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:33,676 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:33,677 |     INFO | main.py:99 | 📑 Document Type: ID Card
+2025-11-05 14:23:33,677 |     INFO | main.py:111 | ✅ Extraction successful for id_card_03.jpeg (category: receipts_invoices)
+2025-11-05 14:23:33,678 |     INFO | main.py:75 | 🔍 Processing: receipts_011.png (category: receipts_invoices)
+2025-11-05 14:23:33,988 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:34,291 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:34,292 |     INFO | main.py:83 | 📄 Extracted Fields for receipts_011.png: {}
+2025-11-05 14:23:34,293 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:34,293 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:34,293 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:34,294 |     INFO | main.py:111 | ✅ Extraction successful for receipts_011.png (category: receipts_invoices)
+2025-11-05 14:23:34,294 |     INFO | main.py:75 | 🔍 Processing: receipts_03.png (category: receipts_invoices)
+2025-11-05 14:23:34,802 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:35,127 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:35,143 |     INFO | main.py:83 | 📄 Extracted Fields for receipts_03.png: {'Name': 'ihi k i4fr il ll yl'}
+2025-11-05 14:23:35,247 |     INFO | main.py:87 | ✅ Validated Fields: {'Name': 'iii k if il ll ll'}
+2025-11-05 14:23:35,248 |     INFO | main.py:88 | 📊 Confidence Scores: {'Name': 0.833}
+2025-11-05 14:23:35,248 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:35,249 |     INFO | main.py:111 | ✅ Extraction successful for receipts_03.png (category: receipts_invoices)
+2025-11-05 14:23:35,249 |     INFO | main.py:75 | 🔍 Processing: receipts_05.png (category: receipts_invoices)
+2025-11-05 14:23:35,617 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:35,877 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:35,887 |     INFO | main.py:83 | 📄 Extracted Fields for receipts_05.png: {}
+2025-11-05 14:23:35,888 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:35,888 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:35,889 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:35,889 |     INFO | main.py:111 | ✅ Extraction successful for receipts_05.png (category: receipts_invoices)
+2025-11-05 14:23:35,890 |     INFO | main.py:75 | 🔍 Processing: receipts_07.png (category: receipts_invoices)
+2025-11-05 14:23:36,240 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:36,527 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:36,528 |     INFO | main.py:83 | 📄 Extracted Fields for receipts_07.png: {}
+2025-11-05 14:23:36,528 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:36,529 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:36,529 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:36,529 |     INFO | main.py:111 | ✅ Extraction successful for receipts_07.png (category: receipts_invoices)
+2025-11-05 14:23:36,530 |     INFO | main.py:75 | 🔍 Processing: receipts_09.png (category: receipts_invoices)
+2025-11-05 14:23:36,830 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:37,120 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:37,121 |     INFO | main.py:83 | 📄 Extracted Fields for receipts_09.png: {}
+2025-11-05 14:23:37,121 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:37,121 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:37,122 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:37,122 |     INFO | main.py:111 | ✅ Extraction successful for receipts_09.png (category: receipts_invoices)
+2025-11-05 14:23:37,122 |     INFO | main.py:75 | 🔍 Processing: receipt_01.png (category: receipts_invoices)
+2025-11-05 14:23:37,462 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:37,796 |     INFO | text_extraction.py:70 | Tesseract extraction successful
+2025-11-05 14:23:37,809 |     INFO | main.py:83 | 📄 Extracted Fields for receipt_01.png: {}
+2025-11-05 14:23:37,810 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:37,810 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:37,811 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:37,812 |     INFO | main.py:111 | ✅ Extraction successful for receipt_01.png (category: receipts_invoices)
+2025-11-05 14:23:37,812 |     INFO | main.py:75 | 🔍 Processing: receipt_02.png (category: receipts_invoices)
+2025-11-05 14:23:38,271 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:38,566 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:38,567 |     INFO | main.py:83 | 📄 Extracted Fields for receipt_02.png: {}
+2025-11-05 14:23:38,567 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:38,568 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:38,568 |     INFO | main.py:99 | 📑 Document Type: Receipt
+2025-11-05 14:23:38,568 |     INFO | main.py:111 | ✅ Extraction successful for receipt_02.png (category: receipts_invoices)
+2025-11-05 14:23:38,569 |     INFO | main.py:75 | 🔍 Processing: placeholder_1.jpg (category: screenshots)
+2025-11-05 14:23:40,927 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:41,224 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:41,225 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_1.jpg: {}
+2025-11-05 14:23:41,226 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:41,226 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:41,227 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:41,227 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_1.jpg (category: screenshots)
+2025-11-05 14:23:41,228 |     INFO | main.py:75 | 🔍 Processing: placeholder_2.jpg (category: screenshots)
+2025-11-05 14:23:43,603 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:43,881 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:43,882 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_2.jpg: {}
+2025-11-05 14:23:43,882 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:43,883 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:43,883 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:43,884 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_2.jpg (category: screenshots)
+2025-11-05 14:23:43,885 |     INFO | main.py:75 | 🔍 Processing: placeholder_3.jpg (category: screenshots)
+2025-11-05 14:23:46,261 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:46,546 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:46,547 |     INFO | main.py:83 | 📄 Extracted Fields for placeholder_3.jpg: {}
+2025-11-05 14:23:46,547 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:46,548 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:46,548 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:46,549 |     INFO | main.py:111 | ✅ Extraction successful for placeholder_3.jpg (category: screenshots)
+2025-11-05 14:23:46,549 |     INFO | main.py:75 | 🔍 Processing: sc_01.jpeg (category: screenshots)
+2025-11-05 14:23:46,861 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:47,162 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:47,163 |     INFO | main.py:83 | 📄 Extracted Fields for sc_01.jpeg: {}
+2025-11-05 14:23:47,164 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:47,164 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:47,165 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:47,165 |     INFO | main.py:111 | ✅ Extraction successful for sc_01.jpeg (category: screenshots)
+2025-11-05 14:23:47,166 |     INFO | main.py:75 | 🔍 Processing: sc_02.jpeg (category: screenshots)
+2025-11-05 14:23:47,491 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:47,791 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:47,792 |     INFO | main.py:83 | 📄 Extracted Fields for sc_02.jpeg: {}
+2025-11-05 14:23:47,792 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:47,792 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:47,793 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:47,793 |     INFO | main.py:111 | ✅ Extraction successful for sc_02.jpeg (category: screenshots)
+2025-11-05 14:23:47,794 |     INFO | main.py:75 | 🔍 Processing: sc_03.jpeg (category: screenshots)
+2025-11-05 14:23:48,208 |  WARNING | text_extraction.py:60 | EasyOCR returned no text
+2025-11-05 14:23:48,504 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:48,504 |     INFO | main.py:83 | 📄 Extracted Fields for sc_03.jpeg: {}
+2025-11-05 14:23:48,505 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:48,505 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:48,505 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:48,506 |     INFO | main.py:111 | ✅ Extraction successful for sc_03.jpeg (category: screenshots)
+2025-11-05 14:23:48,506 |     INFO | main.py:75 | 🔍 Processing: sc_05.jpeg (category: screenshots)
+2025-11-05 14:23:48,924 |     INFO | text_extraction.py:58 | EasyOCR extraction successful
+2025-11-05 14:23:49,211 |  WARNING | text_extraction.py:72 | Tesseract returned no text
+2025-11-05 14:23:49,221 |     INFO | main.py:83 | 📄 Extracted Fields for sc_05.jpeg: {}
+2025-11-05 14:23:49,221 |     INFO | main.py:87 | ✅ Validated Fields: {}
+2025-11-05 14:23:49,222 |     INFO | main.py:88 | 📊 Confidence Scores: {}
+2025-11-05 14:23:49,222 |     INFO | main.py:99 | 📑 Document Type: Document
+2025-11-05 14:23:49,223 |     INFO | main.py:111 | ✅ Extraction successful for sc_05.jpeg (category: screenshots)
+2025-11-05 14:23:49,273 |     INFO | main.py:124 | ✅ Extraction completed! Results saved to results/csv\ocr_results.csv
+2025-11-05 14:23:49,303 |    ERROR | main.py:130 | Error during data export: table ocr_results has no column named Doc_Type
+2025-11-05 14:23:49,303 | CRITICAL | main.py:136 | Critical error in batch processing: table ocr_results has no column named Doc_Type
+2025-11-05 14:23:49,304 | CRITICAL | main.py:167 | Unexpected error: table ocr_results has no column named Doc_Type
