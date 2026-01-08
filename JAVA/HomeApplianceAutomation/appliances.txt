@@ -1,0 +1,4 @@
+Light,false
+Fan,true
+Air Conditioner,false
+Television,true
