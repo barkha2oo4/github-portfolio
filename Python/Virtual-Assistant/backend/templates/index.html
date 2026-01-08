@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-pic-container">
+            <img src="/backend/image/images.jpg" alt="Assistant Profile" class="profile-pic">
+        </div>
+        <h1>Virtual Assistant</h1>
+        <form id="query-form">
+            <input type="text" id="user-input" placeholder="Ask me anything..." autocomplete="off" required>
+            <button type="submit">Ask</button>
+            <button type="button" id="mic-btn" title="Speak"><span role="img" aria-label="mic">🎤</span></button>
+        </form>
+        <div id="response"></div>
+        <button id="tts-btn" type="button">🔊 Speak Response</button>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

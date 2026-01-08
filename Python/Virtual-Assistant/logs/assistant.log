@@ -1,0 +1,10 @@
+2025-05-19 10:47:29,259 - root - INFO - Logging system initialized
+2025-05-26 23:12:14,279 - root - INFO - Logging system initialized
+2025-05-26 23:12:23,122 - root - INFO - Text input received: hi
+2025-05-26 23:12:23,166 - root - INFO - Processing user input: hi
+2025-05-26 23:12:23,182 - root - INFO - User query: hi
+2025-05-26 23:12:23,443 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'E:\\p-app\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-05-26 23:12:23,462 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'E:\p-app\Lib\site-packages\comtypes\gen'
+2025-05-26 23:14:15,994 - root - INFO - Response from known actions: ['Hello, how can I help you?']
+2025-05-26 23:14:15,999 - root - INFO - Bot response: Hello, how can I help you?
+2025-05-27 00:11:41,908 - root - INFO - Application closing
