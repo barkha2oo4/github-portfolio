@@ -1,0 +1,49 @@
+Pizza Sales Analysis Project
+
+This project focuses on analyzing pizza sales data to uncover key business insights using SQL.
+The analysis covers total orders, revenue generation, sales patterns by time, customer preferences for pizza types and sizes, and revenue distribution across categories.
+It is designed to enhance data-driven decision-making for restaurant operations and marketing strategies.
+📂 Dataset
+
+The dataset consists of multiple tables:
+- **orders**: Order ID, date, and time.
+- **order_details**: Items per order (pizza_id, quantity).
+- **pizzas**: Pizza details (type, size, price).
+- **pizza_types**: Category (Veg/Non-Veg, etc.).
+
+💡 Business Questions Answered
+🔹 Basic Queries
+- Total number of orders placed.
+- Total revenue generated from pizza sales.
+- Highest-priced pizza on the menu.
+- Most common pizza size ordered.
+- Top 5 most-ordered pizza types.
+🔹 Intermediate Queries
+- Quantity sold by pizza category (e.g., Classic, Veggie).
+- Order distribution by hour of the day.
+- Category-wise pizza distribution.
+- Average pizzas ordered per day.
+- Top 3 pizza types by revenue.
+🔹 Advanced Queries
+- % Revenue contribution by each pizza type.
+- Cumulative revenue trend over time.
+- Top 3 pizza types by revenue **per category**.
+
+🛠️ Tools & Technologies
+
+- **SQL** (Joins, Aggregations, Window Functions)
+- **MySQL Workbench** (or your SQL editor)
+
+📈 Key Insights
+
+- **Margherita** is the top-selling pizza, contributing ~15% to total revenue.
+- Peak order times are around **7–9 PM**, indicating strong dinner sales.
+- **Classic** pizzas dominate sales, but **Gourmet** pizzas drive higher revenue per order.
+- The **Large** size is the most popular, accounting for 60% of orders.
+Conclusion
+
+The pizza sales analysis provided valuable insights into customer behavior, peak ordering times, and top-performing pizza types.
+Key findings like the dominance of large-sized pizzas, revenue concentration among a few premium pizzas, and peak sales during evening hours can help the business optimize inventory, promotions, and staffing.
+Using data-driven strategies, the restaurant can significantly enhance customer satisfaction and boost overall revenue.
+
+
