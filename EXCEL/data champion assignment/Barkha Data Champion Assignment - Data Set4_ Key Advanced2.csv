@@ -1,0 +1,63 @@
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,Q1,0,Option A: I prefer vacationing in familiar destinations where I know what to expect and can reduce any surprises.
+,,,1,"Option B: When faced with the chance to travel to a completely new place with no set plans, I get excited about the unknown and the potential for unexpected adventures."
+,,,2,"Option C: I enjoy exploring new places, but I like to have a detailed itinerary and some certainty about what I will be doing each day."
+,,,-1,"Option D: I’m open to traveling to new destinations, but I usually do thorough research and plan ahead to minimize any potential risks or uncertainties."
+,,,,
+,,,,
+,,Q2,-1,"Option A: Finishing daily tasks quickly and efficiently, allowing you to feel productive and move on to other activities."
+,,,2,Option B: Receiving compliments and recognition from friends or family for something you've accomplished.
+,,,1,Option C: Completing a challenging workout or training regimen that you've been working on for weeks.
+,,,0,"Option D: Learning a new skill or hobby and overcoming difficulties along the way, regardless of how well you master it in the end."
+,,,,
+,,,,
+,,Q3,2,Option A: I make decisions on my own but like to have some guidelines or a framework to follow to feel more confident.
+,,,1,Option B: I often seek advice and approval from others before making a decision to ensure I’m on the right track.
+,,,-1,"Option C: When faced with a decision, I prefer to rely on my own judgment and instincts, even if it means making mistakes along the way."
+,,,0,Option D: I usually gather a lot of information and consider others' opinions but ultimately trust my own judgment to make the final decision.
+,,,,
+,,,,
+,,Q4,2,Option A: I prefer tasks that show quick results and tend to get frustrated if I don’t see immediate progress.
+,,,1,Option B: I often seek advice and approval from others before making a decision to ensure I’m on the right track.
+,,,-1,"Option C: I often seek out activities where I can see incremental progress, as it helps me stay patient and motivated over time."
+,,,0,"Option D: I enjoy activities like gardening or practicing a musical instrument, even if progress is slow."
+,,,,
+,,,,
+,,Q5,2,Option A: I focus more on getting things done and I feel that I'd overthink if I think about my strength and weakness
+,,,1,"Option B: I regularly reflect on my strengths and weaknesses, using this self-awareness to set personal goals and improve myself."
+,,,-1,"Option C: I sometimes think about my strengths and weaknesses, but I often rely on feedback from others to understand myself better."
+,,,0,Option D: I am aware of my strengths and weaknesses but prefer to focus on my strengths to stay motivated and positive.
+,,,,
+,,,,
+,,Q6,2,"Option A: Prioritize placement preparation, requesting more structured guidance in the internship to save time for your interview preparations."
+,,,1,"Option B: Fully commit to the internship, knowing that your placement preparation will be compromised significantly."
+,,,-1,"Option C: Balance both the internship and placement preparation by setting a strict schedule, ensuring you give adequate time to both without compromising on either."
+,,,0,"Option D: Use the internship to network and gain recommendations from the decision-maker, hoping it will directly improve your placement prospects."
+,,,,
+,,,,
+,,Q7,2,Option A: Focus on learning and applying established frameworks and structured thinking methods to systematically approach the problem.
+,,,1,"Option B: Rely on first principles reasoning, breaking the problem down to its most basic elements and building up your understanding from there."
+,,,-1,"Option C: Seek a balance between structured thinking and first principles reasoning, using frameworks where they fit and breaking down elements from scratch when needed."
+,,,0,"Option D: Use this opportunity to network and seek advice from others who have solved similar problems, hoping to gather enough information to complete the project successfully."
+,,,,
+,,,,
+,,Q8,2,Option A: Enroll in the course because it will help me stay competitive and not fall behind my peers.
+,,,1,Option B: Enroll in the course because I am genuinely interested in the subject and see long-term benefits.
+,,,-1,Option C: Only enroll if it fits easily into my schedule and does not interfere with my other activities.
+,,,0,Option D: Skip the course because I prefer to focus on activities that provide immediate benefits like grades or credits.
+,,,,
+,,,,
+,,Q9,1,"Option A: Accept the internship to gain hands-on experience and valuable learning opportunities, without worrying about formal recognition."
+,,,-1,"Option B: Accept the internship and emphasize to everyone how it will contribute to your self-development and long-term career growth, even without a certificate."
+,,,2,Option C: Decline the internship because the absence of an official certificate means you won't have formal recognition for your efforts.
+,,,0,Option D: Take the internship but request a letter of recommendation or some form of written acknowledgment from the decision-makers as an alternative to a certificate.
+,,,,
+,,,,
+,,Q10,2,"Option A: Dive into the detailed aspects of the project, track markers for measurement, it might take a long time before you see any significant results."
+,,,-1,"Option B: Focus on the aspects of the project that provide immediate feedback and visible results, as this keeps you motivated."
+,,,1,Option C: Balance your approach by setting short-term goals to achieve quick wins while keeping the long-term process in mind.
+,,,0,Option D: Regularly seek feedback from your mentor to ensure you are on the right track and adjust your efforts accordingly to see quicker progress.
