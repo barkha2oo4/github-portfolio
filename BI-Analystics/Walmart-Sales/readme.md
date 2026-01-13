@@ -144,13 +144,3 @@ Prepared by Barkha (barkha2oo4). Dashboard created with:
 
 ---
 
-## Contact
-For help, questions or collaboration:
-- GitHub: https://github.com/barkha2oo4
-- Email: (add your preferred contact email)
-
----
-
-## License
-Specify a license (e.g., MIT) or company policy. If unsure, add a LICENSE file or state: "Proprietary — do not distribute without permission."
-
